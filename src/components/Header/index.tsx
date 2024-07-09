@@ -4,6 +4,8 @@ import DropdownNotification from './DropdownNotification';
 import DropdownUser from './DropdownUser';
 import LogoIcon from '../../images/logo/logo-icon.svg';
 import DarkModeSwitcher from './DarkModeSwitcher';
+import iconFems from '../../images/icon/icon-fems.png';
+import iconPremium from '../../images/icon/icon-premium.png';
 
 const Header = (props: {
   sidebarOpen: string | boolean | undefined;
@@ -12,6 +14,11 @@ const Header = (props: {
   return (
     <header className="sticky top-0 z-999 flex w-full bg-white drop-shadow-1 dark:bg-boxdark dark:drop-shadow-none">
       <div className="flex flex-grow items-center justify-between px-4 py-4 shadow-2 md:px-6 2xl:px-11">
+        <div className='flex gap-4'>
+          <p className='flex gap-1.5 text-e_blue'><img src={iconFems} alt="icon" className='h-3 mt-1.5' /> FEMS</p>
+          <p className='flex gap-1.5 text-e_orange'><img src={iconPremium} alt="icon" className='h-4 mt-1' /> PREMIUM</p>
+        </div>
+
         <div className="flex items-center gap-2 sm:gap-4 lg:hidden">
           {/* <!-- Hamburger Toggle BTN --> */}
           <button
@@ -61,7 +68,8 @@ const Header = (props: {
           </Link>
         </div>
 
-        <div className="hidden sm:block">
+        {/* search box */}
+        {/* <div className="hidden sm:block">
           <form action="https://formbold.com/s/unique_form_id" method="POST">
             <div className="relative">
               <button className="absolute left-0 top-1/2 -translate-y-1/2">
@@ -95,7 +103,7 @@ const Header = (props: {
               />
             </div>
           </form>
-        </div>
+        </div> */}
 
         <div className="flex items-center gap-3 2xsm:gap-7">
           <ul className="flex items-center gap-2 2xsm:gap-4">

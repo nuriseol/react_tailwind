@@ -32,7 +32,7 @@ module.exports = {
         graydark: '#333A48',
         'gray-2': '#F7F9FC',
         'gray-3': '#FAFAFA',
-        whiten: '#F1F5F9',
+        whiten: '#F1F6F9', //custom 수정
         whiter: '#F5F7FD',
         boxdark: '#24303F',
         'boxdark-2': '#1A222C',
@@ -51,6 +51,10 @@ module.exports = {
         success: '#219653',
         danger: '#D34053',
         warning: '#FFA70B',
+        e_blue: "#369FD2",
+        e_green: "#59B376",
+        e_emerald: "#8ED9CA",
+        e_orange: "#FF8311"
       },
       fontSize: {
         'title-xxl': ['44px', '55px'],
