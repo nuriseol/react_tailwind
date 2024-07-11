@@ -7,6 +7,7 @@ import SignIn from './pages/Authentication/SignIn';
 import SignUp from './pages/Authentication/SignUp';
 import Calendar from './pages/Calendar';
 import Chart from './pages/Chart';
+import Home from './pages/Home';
 import ECommerce from './pages/Dashboard/ECommerce';
 import FormElements from './pages/Form/FormElements';
 import FormLayout from './pages/Form/FormLayout';
@@ -71,8 +72,8 @@ function App() {
                 index
                 element={
                   <>
-                    <PageTitle title="eCommerce Dashboard | TailAdmin - Tailwind CSS Admin Dashboard Template" />
-                    <ECommerce />
+                    <PageTitle title="E-VERSE V2.0" />
+                    <Home />
                   </>
                 }
               />

@@ -1,8 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import LogoDark from '../../images/logo/logo-expansiva.png';
 import { useNavigate } from 'react-router-dom';
+import LogoDark from '../../images/logo/logo-expansiva.png';
 import atemosLogo from '../../images/logo/main_logo_wh_width.png';
+import back from '../../images/icon/back2.png';
 
 const SignIn: React.FC = () => {
   const nav = useNavigate();
@@ -12,8 +13,8 @@ const SignIn: React.FC = () => {
   };
 
   return (
-    <div className='w-full h-full relative'>
-      <div className='bg-gradient-to-r from-e_blue to-e_green w-full h-screen bg-blue-400 flex items-center justify-center text-white p-5'>
+    <div className='w-full h-full relative bg-gradient-to-r from-e_blue to-e_green w-full h-screen' >
+      <div className='flex items-center justify-center text-white p-5 relative absolute z-50 h-full w-full'>
         <div className="text-center">
           <div className="">
             <img className="mx-auto mb-10" src={LogoDark} alt="Logo" />
@@ -106,8 +107,13 @@ const SignIn: React.FC = () => {
         </div>
       </div>
 
-      <div className="absolute bottom-0 right-1/2 transform translate-x-1/2 lg:right-0 lg:transform-none px-8 pb-4">
+      <div className="absolute z-50 bottom-0 right-1/2 transform translate-x-1/2 lg:right-0 lg:transform-none px-8 pb-4">
         <img className="w-30" src={atemosLogo} alt="Logo" />
+      </div>
+      
+      
+      <div className="absolute right-0 top-0 h-full opacity-50 hidden xl:block">
+        <img className="h-full" src={back} alt="Logo" />
       </div>
     </div>
   );
