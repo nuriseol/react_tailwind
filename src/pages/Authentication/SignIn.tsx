@@ -13,7 +13,7 @@ const SignIn: React.FC = () => {
   };
 
   return (
-    <div className='w-full h-full relative bg-gradient-to-r from-e_blue to-e_green w-full h-screen' >
+    <div className='w-full h-full relative bg-gradient-to-r from-e_green to-e_blue w-full h-screen' >
       <div className='flex items-center justify-center text-white p-5 relative absolute z-50 h-full w-full'>
         <div className="text-center">
           <div className="">

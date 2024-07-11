@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import ClickOutside from '../ClickOutside';
 import languages from '../Dropdowns/languages';
@@ -8,6 +8,11 @@ import i18n from '../../i18n';
 const DropdownLanguage = () => {
   const [selectedLang, setSelectedLang] = useState<string>("en");
   const [dropdownOpen, setDropdownOpen] = useState(false);
+
+  useEffect(() => {
+    const currentLanguage: any = localStorage.getItem("I18N_LANGUAGE");
+    setSelectedLang(currentLanguage);
+  }, []);
 
   const changeLanguageAction = (lang: string) => {
     //set language as i18n

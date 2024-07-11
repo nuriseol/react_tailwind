@@ -14,10 +14,10 @@ const Header = (props: {
 }) => {
   return (
     <header className="sticky top-0 z-999 flex w-full bg-white drop-shadow-1 dark:bg-boxdark dark:drop-shadow-none">
-      <div className="flex flex-grow items-center justify-between px-4 py-4 shadow-2 md:px-6 2xl:px-11">
-        <div className='gap-4 hidden lg:flex'>
-          <p className='flex gap-1.5 text-e_blue'><img src={iconFems} alt="icon" className='h-3 mt-1.5' /> FEMS</p>
-          <p className='flex gap-1.5 text-e_orange'><img src={iconPremium} alt="icon" className='h-4 mt-1' /> PREMIUM</p>
+      <div className="flex flex-grow items-center justify-between px-4 py-4 shadow-2 md:px-8 2xl:px-11">
+        <div className='gap-5 hidden lg:flex font-semibold'>
+          <p className='flex gap-2 text-primary'><img src={iconFems} alt="icon" className='h-3 mt-1.5' /> FEMS</p>
+          <p className='flex gap-2 text-secondary'><img src={iconPremium} alt="icon" className='h-4 mt-1' /> PREMIUM</p>
         </div>
 
         <div className="flex items-center gap-2 sm:gap-4 lg:hidden">
